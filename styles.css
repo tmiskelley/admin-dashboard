@@ -15,12 +15,20 @@ p, h1 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 input[type="text"] {
     border: 1px solid lightgray;
     border-radius: 12px;
     background-color: lightgray;
     padding: 3px;
-    padding-left: 9px;
+    padding-left: 12px;
     margin: auto 0;
 }
 
@@ -35,6 +43,28 @@ button {
     border-radius: 18px;
     background-color: #2196F3;
     padding: 10px 24px;
+    transition: background-color .2s;
+}
+
+button:hover {
+    background-color: #5ab3fc;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 205px 1fr;
+}
+
+#side-bar {
+    color: white;
+    background-color: #2196F3;
+    padding: 1.5rem;
+    grid-row: 1 / -1;
+}
+
+#side-bar a {
+    color: white;
 }
 
 #header-top {
