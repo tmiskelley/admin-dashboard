@@ -23,7 +23,7 @@ h1 {
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 3rem;
 }
 
 a {
@@ -74,12 +74,23 @@ button:hover {
     grid-template-rows: 100px 1fr;
     color: white;
     background-color: #2196F3;
-    padding: 2rem 3rem;
+    padding: 0 1.5rem;
     grid-row: 1 / -1;
+    gap: 1.5rem;
 }
 
 #side-bar a {
     color: white;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.options h2 {
+    margin-left: 1.5rem;
 }
 
 #header-top {
